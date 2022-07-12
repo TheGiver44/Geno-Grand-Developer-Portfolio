@@ -1,2 +1,2 @@
-# Geno-Grand-Developer-Portfolio
+# Geno-Grand-Developer-BLOG
 Developer Portfolio / Resume for GenoGrand.eth

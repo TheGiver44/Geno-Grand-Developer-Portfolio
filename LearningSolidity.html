@@ -18,6 +18,50 @@
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+
+        <style>
+            body {
+  background-color: #fffedd;
+  font-family: "ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 84%;
+  width: 80ch;
+  padding: 2ch;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: 0 0 50px #4c1c57;
+}
+
+.post-header {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-family: Helvetica;
+}
+
+.post-content {
+  color: rgb(3, 0, 0);
+  margin-bottom: 2ch;
+  font-size: 1.2rem;
+}
+
+.image-content {
+  content: url("https://www.kreatore.it/wp-content/uploads/2019/10/image.png");
+  width: 100%;
+  max-width: 100%;
+  heigth: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+        </style>
     </head>
 
 <body>
@@ -25,7 +69,8 @@
         <div class="sidebar">
             <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
                 <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
-                <h1 class="font-weight-bold">GenoGrand.eth</h1>
+                
+               <h1 class="font-weight-bold">GenoGrand.eth</h1>
                     <p class="mb-4">
                         A Seasoned Web Developer with Experience to match, Geno Has been Developing Projects on the Web since 2013. He has intermediate knowledge and skills in Front-End Web Development and Is currently focused on Blockchain Development.
                     </p>
@@ -42,8 +87,8 @@
             </div>
         </div>
         <div class="content">
-            <!-- Navbar Start -->
-            <div class="container p-0">
+             <!-- Navbar Start -->
+             <div class="container p-0">
                 <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
                     <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -51,18 +96,29 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav m-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu">
                                     <a href="blog.html" class="dropdown-item">Blog Home</a>
-                                        <a href="DeveloperJournal-Resources.html" class="dropdown-item">Dev Journal</a>
-                                  <a href="LearningSolidity.html" class="dropdown-item">Learning Solidity</a>
-                                  <a href="MacKeyboardShortcuts.html" class="dropdown-item">Mac Keyboard Shortcuts</a>
-                                  <a href="DiscordCommands.html" class="dropdown-item">Discord Commands</a>
-                                  <a href="MinifyJavascript.html" class="dropdown-item">Javascript-Minify</a>
-                                    </div>
+                                    <a href="DeveloperJournal-Resources.html" class="dropdown-item">Dev Journal</a>
+                              <a href="LearningSolidity.html" class="dropdown-item">Learning Solidity</a>
+                              <a href="MacKeyboardShortcuts.html" class="dropdown-item">Mac Keyboard Shortcuts</a>
+                              <a href="DiscordCommands.html" class="dropdown-item">Discord Commands</a>
+                              <a href="Gitlab-Grunt.html" class="dropdown-item">Gitlab & Grunt</a>
+                              <a href="LearningSolidity-PT2.html" class="dropdown-item">Learning Solidity PT2</a>
+                              <a href="Docker.html" class="dropdown-item">Docker</a>
+                              <a href="DeveloperJournal-ScratchPaper.html" class="dropdown-item">Developer Scratch Paper</a>
+                              <a href="SolidityBank.html" class="dropdown-item">Solidity: Bank Smart Contract Example</a>
+                              <a href="SolidityCryptoProjects.html" class="dropdown-item">Learning Solidity: Creating Blockchain Projects</a>
+                              <a href="Typescript-Type3.html" class="dropdown-item">Typescript & Type3</a>
+                              <a href="SCSS.html" class="dropdown-item">SCSS/SASS</a>
+                              <a href="InstallGoogleChrome.html" class="dropdown-item">Install Google Chrome</a>
+                              <a href="PersonalStrengths.html" class="dropdown-item">My Personal Strengths as a Developer</a>
+                              <a href="TypingLinks.html" class="dropdown-item">Typing Practice Links</a>
+                              <a href="SolidityFunctions.html" class="dropdown-item">Learning Solidity Functions</a> 
+                              <a href="MountingUSB-Linux.html" class="dropdown-item">Linux Admin: Mounting USB Drives - Terminal Commands</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -88,60 +144,33 @@
                 </div>
             </div>
             <!-- Page Header End -->
-          <h2>LEARNING SOLIDITY - Introduction</h2>
-          <p>Contracts</p>
-            <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></td><td><pre style="margin: 0; line-height: 125%">contract L {
-    <span style="color: #8B008B; font-weight: bold">function</span> add(uint _p, uint _q) returns (uint) {
-        <span style="color: #8B008B; font-weight: bold">return</span> _p + _q;
-    }
-}
-contract M {
-    address p;
-    <span style="color: #8B008B; font-weight: bold">function</span> f(uint _p) {
-        p = <span style="color: #8B008B; font-weight: bold">new</span> L();
-    }
-}
-</pre></td></tr></table></div>
-
-          <br>
-          <h3></h3>
-          <p>Pragma:
-
-</p>
-          <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
-2
-3
-4</pre></td><td><pre style="margin: 0; line-height: 125%">pragma solidity ^<span style="color: #B452CD">0.2</span>.<span style="color: #B452CD">32</span>
-This code compiles <span style="color: #8B008B; font-weight: bold">with</span> a compiler <span style="color: #8B008B; font-weight: bold">function</span> &gt;=<span style="color: #B452CD">0.2</span>.<span style="color: #B452CD">32</span>
-A pseudocode example <span style="color: #8B008B; font-weight: bold">for</span> pragma syntax
-<span style="color: #CD5555">&#39;pragma&#39;</span> Identifier ([^;]+) <span style="color: #CD5555">&#39;;&#39;</span>
-</pre></td></tr></table></div>
-
-<br>
-           <h3></h3>
-          <p>Import Files</p>
-          <!-- HTML generated using hilite.me --><div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
-2
-3</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #CD5555">&quot;filename&quot;</span>;
-<span style="color: #8B008B; font-weight: bold">import</span> * as symbolName from <span style="color: #CD5555">&quot;filename&quot;</span>; or <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #CD5555">&quot;filename&quot;</span> as symbolName;
-<span style="color: #8B008B; font-weight: bold">import</span> {symbol1 as alias, symbol2} from <span style="color: #CD5555">&quot;filename&quot;</span>;
-</pre></td></tr></table></div>
-
-          <br>
-
-
                 
-             
+                
+                <!-- Blog List Start -->
+                <div class="container">
+                    <div class="post-header">LEARNING SOLIDITY - Introduction</div>
+                  
+                    <div class="post-content">
+                  
+                      <p>Learning Solidity has been a fun journey thus far and has been very easy for me to understand as a coding language. Solidity is similar to Javascript and 
+                      <p>
+                    </div>
+                  
+                    <img class="image-content">
+                    <div class="post-content">
+                        <ul>
+                            <li>Solidity Testing by Example
+                            https://remix-ide.readthedocs.io/en/latest/unittesting_examples.html</li>
+                            
+                            <li>Solidity Docs
+                            https://solidity-kr.readthedocs.io/ko/latest/contracts.html</li>
+                            
+                            <li>Solidity Tutorials
+                            https://www.quicknode.com/</li>
+                          </ul>
+                    </div>
+                  </div>
+                <!-- Blog List End -->
                 
                 
                 <!-- Footer Start -->
